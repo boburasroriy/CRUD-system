@@ -23,7 +23,8 @@ $posts = $statements->fetchAll();
                 <h5 class="card-title"> <?php echo  $post['Name'] ?></h5>
                 <p class="card-text"> <?php echo  $post['Surname'] ?></p>
                 <a href="#" class="btn btn-primary">Delete</a>
-                <a href="#" class="btn btn-primary">Edit</a>
+                <a href="Edit-post.php?id=<?php echo  $post['id']; ?>" class="btn btn-primary">Edit</a>
+
             </div>
         </div>
         <?php endforeach; ?>

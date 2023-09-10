@@ -11,6 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $statement->execute([
         'name' => $postTitle,
         'text' => $postText,
+
     ]);
     header('location: index.php');
 }
